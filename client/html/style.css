@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: 1000; 
+}
+
+#container {
+    text-align: center;
+}
+
+#title {
+    font-size: 3em;
+    color: #fff; 
+    margin-bottom: 20px;
+}
+
+#teams {
+    color:white;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.team1 {
+    color: #00f; /* Niebieski kolor dla pierwszej drużyny */
+}
+
+.team2 {
+    color: #f00; /* Czerwony kolor dla drugiej drużyny */
+}
+
+#countdown {
+    font-size: 5em;
+    font-weight: bold;
+    color: #fff; /* Biały kolor dla odliczania */
+}
+
+
+.players {
+    width: 100%; 
+    max-width: 38vh; 
+    height: 7vh; 
+    position: absolute;
+    display: flex;
+    border-radius: 1.5vh; 
+    justify-content: space-between;
+    align-items: center;
+    left: 50%;
+    top: 2%;
+    transform: translate(-50%, -1%);
+    background: #181818;
+    padding: 0.7vh 1.5vh; 
+}
+
+
+.team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vh; 
+    width: 33%; 
+}
+
+.team-label {
+    font-size: 1.4vh;
+    background: linear-gradient(45deg, rgb(53, 53, 190), #ababe8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+
+   
+}
+
+.team-label2 {
+    font-size: 1.4vh;
+    background: linear-gradient(45deg, red, #ff9999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+
+.players h2 {
+    font-size: 2vh;
+    text-align: center;
+}
+
+.players h2#team1 { /* MICHAL */
+    color: white;
+}
+
+.players h2#team2 { /* SZEFF */
+    color: white;
+}
+
+.players .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+
+.players .center h1 {
+    font-size: 5vh;
+    line-height: 1;
+}
+
+.players .center img#vs {
+    width: 6vh; 
+    height: auto;
+    display: block;
+    /* filter: drop-shadow(0px 0px 12px white); */
+}
+
+.players .center h1#players1 {
+    background: rgb(0, 129, 255);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Inter', sans-serif;
+    background-clip: text;
+    color: transparent;
+}
+
+.players .center h1#players2 {
+    font-family: 'Inter', sans-serif;
+    background: rgb(0, 129, 255);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
